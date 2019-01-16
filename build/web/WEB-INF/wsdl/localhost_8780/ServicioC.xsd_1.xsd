@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.9-b130926.1035 svn-revision#5f6196f2b90e9460065a4c2f4e30e065b245e51e. --><xs:schema xmlns:tns="http://WebServices/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WebServices/">
+
+<xs:complexType name="dtarregloDtColCompWeb">
+<xs:sequence>
+<xs:element name="arregloColaBoraciion" type="tns:dtColaboracionCompWeb" nillable="true" minOccurs="0" maxOccurs="unbounded"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dtColaboracionCompWeb">
+<xs:sequence>
+<xs:element name="comentarioC" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="estadoP" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="fechaC" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="horaC" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="montoC" type="xs:int"></xs:element>
+<xs:element name="nick" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="proponenteP" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="retornoP" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="tituloP" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dtContieneArray">
+<xs:sequence>
+<xs:element name="myarreglo" type="xs:string" minOccurs="0" maxOccurs="unbounded"></xs:element>
+<xs:element name="nombreArray" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dtPagoWeb">
+<xs:sequence>
+<xs:element name="banco" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="cvc" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="numeroCuenta" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="numeroPaypal" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="numeroTarjeta" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="tipoPago" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="tipoTarjeta" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="titular" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="tituloPropuesta" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="fVencimiento" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
